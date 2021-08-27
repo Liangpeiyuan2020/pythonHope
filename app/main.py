@@ -26,11 +26,13 @@ app = Flask(__name__)
 def hello_world():
     try:
         sttr = demo.main2()
-        saar=sttr[o]
+        saar=sttr[0]
         saar=str(saar)
         return saar
     except Exception as e:
-        return e
+        zz=str(e)
+        aa=zz+"yyyyyyyyyyyy"
+        return aa
     return "uuuuuuuuuuuuuuu"
 
 if __name__ == "__main__":
